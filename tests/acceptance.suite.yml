@@ -1,0 +1,11 @@
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url: http://www.bayviewcollege.local/
+#            url: http://2logix.com/bvc/web/
+            browser: chrome
+        - Yii2:
+            part: orm
+            entryScript: index-test.php
+            cleanup: false
